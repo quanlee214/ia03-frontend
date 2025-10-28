@@ -36,7 +36,8 @@ const Login = () => {
   const navigate = useNavigate();
   const mutation = useMutation<any, any, LoginFormData>({
     mutationFn: async (formData: LoginFormData) => {
-      const res = await fetch("http://localhost:3000/user/login", {
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const res = await fetch(`${apiUrl}/user/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: formData.email, password: formData.password })

@@ -42,7 +42,8 @@ const SignUp = () => {
 
   const mutation = useMutation<any, any, SignUpFormData>({
     mutationFn: async (formData: SignUpFormData) => {
-      const res = await fetch("http://localhost:3000/user/register", {
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const res = await fetch(`${apiUrl}/user/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: formData.email, password: formData.password })
