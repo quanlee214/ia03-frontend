@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-// ...existing code...
+import * as Lucide from "lucide-react";
 
 const signUpSchema = z.object({
   email: z.string()
@@ -76,7 +76,7 @@ const SignUp = () => {
   <div className="min-h-screen flex items-center justify-center px-4 py-8 bg-gradient-to-br from-[#eaf4fb] via-[#f7fafd] to-[#5997c6]/10">
       <div className="w-full max-w-md">
         <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-6 transition-colors">
-          <ArrowLeft className="w-4 h-4" />
+          <Lucide.ArrowLeft className="w-4 h-4" />
           Back to Home
         </Link>
 
@@ -141,14 +141,14 @@ const SignUp = () => {
               >
                 {mutation.isPending ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Lucide.Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     Creating account...
                   </>
                 ) : mutation.isSuccess ? (
                   "Redirecting..."
                 ) : (
                   <>
-                    <UserPlus className="mr-2 h-4 w-4" />
+                    <Lucide.UserPlus className="mr-2 h-4 w-4" />
                     Sign Up
                   </>
                 )}
