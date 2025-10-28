@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { UserPlus, LogIn, Shield } from "lucide-react";
+// ...existing code...
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -67,7 +67,7 @@ const Home = () => {
               </div>
               <h3 className="font-semibold text-lg mb-2 text-black">Modern UI</h3>
               <p className="text-sm text-black">
-                Beautiful interface built with shadcn/ui and Tailwind CSS
+                Beautiful interface built with Tailwind CSS
               </p>
             </div>
           </div>
