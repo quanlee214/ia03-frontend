@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import * as Lucide from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
