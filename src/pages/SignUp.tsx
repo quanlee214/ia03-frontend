@@ -55,16 +55,25 @@ const SignUp = () => {
       toast({
         title: "Registration successful!",
         description: "Account created. Redirecting to home...",
+        duration: 1500,
+        className: "bg-green-100 border-green-500 text-green-900 shadow-lg"
       });
       setTimeout(() => {
         navigate("/");
       }, 2000);
     },
     onError: (error: any) => {
+      let message = "Registration failed";
+      try {
+        const err = JSON.parse(error.message);
+        message = err.message || message;
+      } catch {
+        if (typeof error.message === "string") message = error.message;
+      }
       toast({
-        title: "Registration failed",
-        description: error.message || "Unknown error",
-        variant: "destructive"
+        title: message,
+        duration: 1500,
+        className: "bg-red-100 border-red-500 text-red-900 shadow-lg"
       });
     }
   });

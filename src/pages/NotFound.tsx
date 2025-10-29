@@ -57,6 +57,8 @@ const SignUp = () => {
       toast({
         title: "Registration successful!",
         description: "Account created (demo mode). Redirecting to login...",
+        duration: 3000,
+        className: "bg-green-100 border-green-500 text-green-900 shadow-lg"
       });
       
       setTimeout(() => {
