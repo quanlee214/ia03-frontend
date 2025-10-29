@@ -49,7 +49,7 @@ const Login = () => {
       toast({
         title: "Login successful!",
         description: `Welcome, ${data.email || "user"}`,
-        duration: 3000,
+        duration: 1000,
         className: "bg-green-100 border-green-500 text-green-900 shadow-lg"
       });
       // Lưu thông tin user vào localStorage
@@ -70,7 +70,7 @@ const Login = () => {
       }
       toast({
         title: message,
-        duration: 3000,
+        duration: 1000,
         className: "bg-red-100 border-red-500 text-red-900 shadow-lg"
       });
     }

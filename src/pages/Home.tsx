@@ -25,7 +25,7 @@ const Home = () => {
     import("@/hooks/use-toast").then(({ toast }) => {
       toast({
         title: "Logged out successfully!",
-        duration: 3000,
+        duration: 1000,
         className: "bg-green-100 border-green-500 text-green-900 shadow-lg"
       });
     });

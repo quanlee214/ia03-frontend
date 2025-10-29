@@ -55,7 +55,7 @@ const SignUp = () => {
       toast({
         title: "Registration successful!",
         description: "Account created. Redirecting to home...",
-        duration: 1500,
+        duration: 1000,
         className: "bg-green-100 border-green-500 text-green-900 shadow-lg"
       });
       setTimeout(() => {
@@ -72,7 +72,7 @@ const SignUp = () => {
       }
       toast({
         title: message,
-        duration: 1500,
+        duration: 1000,
         className: "bg-red-100 border-red-500 text-red-900 shadow-lg"
       });
     }
