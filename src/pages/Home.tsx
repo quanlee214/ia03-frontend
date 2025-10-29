@@ -35,7 +35,7 @@ const Home = () => {
               Secure Registration System
             </div>
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#5997c6] to-[#b3d1ee] bg-clip-text text-transparent">
-              Welcome to User Registration
+              Welcome to our website
             </h1>
             <p className="text-xl text-black max-w-2xl py-4 mx-auto">
               A modern user registration frontend built with React, TypeScript, and Tailwind CSS.
